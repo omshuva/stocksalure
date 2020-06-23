@@ -1,0 +1,11 @@
+# schema_alias:
+#   schema: schema/dataset name in the database
+#   tables:
+#     - table 1
+#     - table 2
+
+example_source_schema:
+  schema: example_source_schema_public
+  tables:
+    - table_1
+    - table_2
