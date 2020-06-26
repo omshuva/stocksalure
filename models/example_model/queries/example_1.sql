@@ -1,5 +1,5 @@
 {{
-  config( destination_table='example_1', update_method='append', staging=True )
+  config( destination_table='example_1', update_method='append' )
 }}
 
 select *
