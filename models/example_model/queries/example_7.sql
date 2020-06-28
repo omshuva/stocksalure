@@ -4,4 +4,4 @@
 
 select *
 from  {{ source('example_model', 'example_6') }}
-join {{ source('example_model', 'example_2') }  
+join {{ source('example_model', 'example_2') }}
