@@ -3,4 +3,4 @@
 }}
 
 select *
-from  {{ source('example_model', 'example_1') }}
+from  {{ source(model, 'example_1') }}
