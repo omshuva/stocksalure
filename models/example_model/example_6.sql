@@ -3,5 +3,4 @@
 }}
 
 select *
-from  {{ source('example_source_schema', 'table_3') }}
-join {{ source('example_model', 'example_4') }}
+from {{ source('example_model', 'example_4') }}
