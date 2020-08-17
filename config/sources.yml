@@ -5,8 +5,7 @@
 #     - table 2
 
 example_source_schema:
-  schema: example_source_schema_public
+  schema_name: example_source_schema_public
   tables:
-    - table_1
-    - table_2
-    - table_3
+    table_1:
+      description: facebook advertsing daily aggregated metrics
