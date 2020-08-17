@@ -1,2 +1,8 @@
 # destination_db: public
 # destination_schema: example_model
+
+description:
+  model: unified and enriched data from multiple marketing sources
+  tables:
+    example_7: all channels daily aggregation view for marketing metrics
+    example_8: all channels monthly aggregation view for marketing metrics
