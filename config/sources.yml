@@ -24,7 +24,7 @@ prod_db:
   tables:
     users: prod db users table, table includes both anonymous and registered users.
     user_details: user attributes
-    subscription:
+    subscription: subscription from prod db
 
 stripe:
   schema_name: stripe_us_102343
@@ -39,7 +39,6 @@ stripe:
     customers: paying entities
     coupon_redemptions: redemption of coupons - joins invoices
     coupons: configuration of coupons
-
 
 events_raw:
   schema_name: firehose_prod
