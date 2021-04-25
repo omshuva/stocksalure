@@ -1,5 +1,5 @@
 {{
-  config( destination_table='user_first_source', update_method='append' prep=True)
+  config( destination_table='user_first_source', update_method='append', prep=True)
 }}
 
 select *
