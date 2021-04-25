@@ -29,24 +29,23 @@ prod_db:
 stripe:
   schema_name: stripe_us_102343
   tables:
-    invoices:
-    line_items:
-    subscriptions:
-    payments:
-    refunds:
-    disputes:
-    payment_methods:
-    customers:
-    coupon_redemptions:
-    coupons:
+    invoices: stripe invoices
+    line_items: stripe line items, joins invoices on invoice id
+    subscriptions: stripe subscriptions
+    payments: payment transactions
+    refunds: stripe refunds
+    disputes: stripe disputes
+    payment_methods: credit card masked details
+    customers: paying entities
+    coupon_redemptions: redemption of coupons - joins invoices
+    coupons: configuration of coupons
 
 
 events_raw:
   schema_name: firehose_prod
   tables:
-    all_events:
-    pageviews:
-    event_signup:
-    event_click_login:
-    event_purchased:
-    event_clicked_ad:
+    all_events: all collected events without properties \n properties appear in each event table
+    event_signup: signup event
+    event_click_login: login event
+    event_purchased: purchase events
+    event_clicked_ad: click ad event
