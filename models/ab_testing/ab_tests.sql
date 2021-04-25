@@ -3,4 +3,4 @@
 }}
 
 select *
-from  {{ source(model, 'all_events') }}
+from  {{ source(events, 'all_events') }}
