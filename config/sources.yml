@@ -36,7 +36,7 @@ stripe:
   coupons:
 
 
-events:
+events_raw:
   schema_name: firehose_prod
   tables:
     all_events:
