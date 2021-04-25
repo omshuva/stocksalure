@@ -1,6 +1,6 @@
 {{
-  config( destination_table='example_6', update_method='append' )
+  config( destination_table='bing_ads', update_method='append' )
 }}
 
 select *
-from {{ source(model, 'example_4') }}
+from {{ source(bing_ads, 'keyword_performance_report') }}
