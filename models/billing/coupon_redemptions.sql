@@ -3,6 +3,6 @@
 }}
 
 select *
-from  {{ source(stripe, 'coupon_redemptions') }} 
+from  {{ source(stripe, 'coupon_redemptions') }}
 join  {{ source(stripe, 'coupons') }}
 join  {{ source(model, 'customers') }}
