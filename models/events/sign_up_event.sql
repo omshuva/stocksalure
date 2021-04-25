@@ -3,4 +3,4 @@
 }}
 
 select *
-from  {{ source(events, 'event_signup') }}
+from  {{ source(events_raw, 'event_signup') }}
