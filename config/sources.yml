@@ -10,9 +10,11 @@ facebook_ads:
     ad_insights: facebook advertsing daily aggregated metrics
 
 google_ads:
+  schema_name: google_ads
   keyword_performance_report: keyword level performance metrics
 
 bing_ads:
+  schema_name: bing_main
   keyword_performance_report: keyword level performance metrics for
 
 prod_db:
@@ -24,16 +26,17 @@ prod_db:
 
 stripe:
   schema_name: stripe_us_102343
-  invoices:
-  line_items:
-  subscriptions:
-  payments:
-  refunds:
-  disputes:
-  payment_methods:
-  customers:
-  coupon_redemptions:
-  coupons:
+    tables:
+    invoices:
+    line_items:
+    subscriptions:
+    payments:
+    refunds:
+    disputes:
+    payment_methods:
+    customers:
+    coupon_redemptions:
+    coupons:
 
 
 events_raw:
