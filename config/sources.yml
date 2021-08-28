@@ -4,8 +4,47 @@
 #     - table 1
 #     - table 2
 
-example_source_schema:
+facebook_ads:
   schema_name: example_source_schema_public
   tables:
-    table_1:
-      description: facebook advertsing daily aggregated metrics
+    ad_insights: facebook advertsing daily aggregated metrics
+
+google_ads:
+  schema_name: google_ads
+  tables:
+    keyword_performance_report: keyword level performance metrics
+
+bing_ads:
+  schema_name: bing_main
+  tables:
+    keyword_performance_report: keyword level performance metrics for
+
+prod_db:
+  schema_name: default_db
+  tables:
+    users: prod db users table, table includes both anonymous and registered users.
+    user_details: user attributes
+    subscription: subscription from prod db
+
+stripe:
+  schema_name: stripe_us_102343
+  tables:
+    invoices: stripe invoices
+    line_items: stripe line items, joins invoices on invoice id
+    subscriptions: stripe subscriptions
+    payments: payment transactions
+    refunds: stripe refunds
+    disputes: stripe disputes
+    payment_methods: credit card masked details
+    customers: paying entities
+    coupon_redemptions: redemption of coupons - joins invoices
+    coupons: configuration of coupons
+
+events_raw:
+  schema_name: firehose_prod
+  tables:
+    all_events: all collected events without properties \n properties appear in each event table
+    event_signup: signup event
+    event_click_login: login event
+    event_purchased: purchase events
+    event_clicked_ad: click ad event
