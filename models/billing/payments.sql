@@ -3,5 +3,5 @@
 }}
 
 select *
-from  {{ source(stripe, 'payments') }}
+from  {{ source(stripe, 'payments') }} 
 join {{ source(stripe, 'payment_methods') }}
