@@ -4,4 +4,4 @@
 
 select *
 from {{ source(model, 'users') }}
-join {{ source(billing, 'invoices') }} 
+join {{ source(billing, 'invoices') }}
