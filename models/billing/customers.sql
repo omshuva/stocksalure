@@ -3,4 +3,4 @@
 }}
 select *
 from  {{ source(stripe, 'customers') }}
-join  {{ source(prod_db, 'users') }}
+join  {{ source(prod_db, 'users') }}  
