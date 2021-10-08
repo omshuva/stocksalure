@@ -5,4 +5,4 @@
 select *
 from {{ source(stripe, 'invoices') }}
 join {{ source(model, 'line_items') }}
-join {{ source(model, 'customers') }}
+join {{ source(model, 'customers') }}   
