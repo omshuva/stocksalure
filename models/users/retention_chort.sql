@@ -5,3 +5,4 @@
 select *
 from {{ source(model, 'users') }}
 join {{ source(billing, 'invoices') }}
+  
