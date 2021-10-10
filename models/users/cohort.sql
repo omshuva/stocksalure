@@ -4,5 +4,6 @@
 
 select *
 from  {{ source(model, 'users') }} users
-join  {{ source(billing, 'invoices') }} invoices  
+join  {{ source(billing, 'invoices') }} invoices
 on users.id = invoices.user_id
+   
