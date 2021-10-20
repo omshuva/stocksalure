@@ -1,5 +1,5 @@
 environment:
-  staging:
-    database: marine-alchemy-265819
   production:
+    database: marine-alchemy-265819
+  staging:
     database: sqlpie-dev
