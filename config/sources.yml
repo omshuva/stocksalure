@@ -3,7 +3,7 @@
 #   tables:
 #     - table 1
 #     - table 2
-
+default_database: marine-alchemy-265819
 facebook_ads:
   schema_name: example_source_schema_public
   tables:
