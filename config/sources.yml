@@ -9,7 +9,7 @@ sources:
     schema_name: example_source_schema_public
     tables:
       ad_insights: facebook advertsing daily aggregated metrics
-
+    
   google_ads:
     schema_name: google_ads
     tables:
