@@ -3,6 +3,6 @@
 }}
 
 select *
-from {{ source(stripe, 'invoices') }}
-join {{ source(billing, 'line_items') }}  
+from {{ source(stripe, 'invoices') }}    
+join {{ source(billing, 'line_items') }}
 join {{ source(model, 'customers') }}
