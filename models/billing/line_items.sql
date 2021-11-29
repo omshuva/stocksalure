@@ -3,4 +3,4 @@
 }}
 
 select *
-from  {{ source(stripe, 'line_items') }}
+from  {{ source(stripe, 'line_items') }}    
